@@ -12,7 +12,7 @@ On launch it fetches fresh API data with Retrofit and replaces Room cache using 
 1. [Overview](#-Concepts)  
 2. [Getting Started](#-getting-started)   
 3. [Screenshots](#-screenshots)  
-4. [License](#-license)  
+4. [Core Features](#-license)  
 
 ---
 
