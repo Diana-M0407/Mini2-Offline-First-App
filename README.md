@@ -9,7 +9,7 @@ On launch it fetches fresh API data with Retrofit and replaces Room cache using 
 
 ## Table of Contents
 
-1. [Overview](#-Concepts)  
+1. [Overview](#-overview)  
 2. [Getting Started](#-getting-started)   
 3. [Screenshots](#-screenshots)  
 4. [Core Features](#-Core-Features)  
@@ -37,7 +37,7 @@ On launch it fetches fresh API data with Retrofit and replaces Room cache using 
 - Open Android Studio 
 - Run emulator (or real device)
 - Ensure internet is ON on first launch
-- In Airplain Mode, close app then reopen app to fetch cached data 
+- In Airplane Mode, close app then reopen app to fetch cached data 
 
 ---
 
