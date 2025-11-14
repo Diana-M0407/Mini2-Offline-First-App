@@ -33,8 +33,6 @@ On launch it fetches fresh API data with Retrofit and replaces Room cache using 
 
 #### Getting Started
 
- Prerequisites:
-
 - Clone repo
 - Open Android Studio 
 - Run emulator (or real device)
