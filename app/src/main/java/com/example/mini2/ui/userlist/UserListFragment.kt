@@ -16,6 +16,8 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+
+
 class UserListFragment : Fragment() {
 
     private var _binding: FragmentUserListBinding? = null
@@ -36,23 +38,40 @@ class UserListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = adapter
 
-        binding.searchInput.addTextChangedListener {
-            viewModel.updateSearch(it.toString())
-        }
+
+        binding.searchInput.addTextChangedListener(object : android.text.TextWatcher {
+            override fun beforeTextChanged(
+                s: CharSequence?, start: Int, count: Int, after: Int
+            ) {
+                // no-op
+            }
+
+            override fun onTextChanged(
+                s: CharSequence?, start: Int, before: Int, count: Int
+            ) {
+                viewModel.updateSearch(s?.toString().orEmpty())
+            }
+
+            override fun afterTextChanged(s: android.text.Editable?) {
+                // no-op
+            }
+        })
+
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.uiState.collectLatest { state ->
                 adapter.submitList(state.users)
-
-                if (state.error != null) {
-                    Toast.makeText(requireContext(), state.error, Toast.LENGTH_SHORT).show()
-                }
+                binding.progressBar.visibility =
+                    if (state.isLoading) View.VISIBLE else View.GONE
             }
         }
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
