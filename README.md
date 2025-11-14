@@ -47,15 +47,15 @@ On launch it fetches fresh API data with Retrofit and replaces Room cache using 
 
 <img width="250" height="1280" alt="ID1-ID3" src="https://github.com/user-attachments/assets/61bb5a56-d987-49ed-abad-a4ddd981f803" />
 
-<img width="300" height="1280" alt="ID4-ID6" src="https://github.com/user-attachments/assets/419640a2-d95c-4e4b-b865-2ef427353b89" />
+<img width="250" height="1280" alt="ID4-ID6" src="https://github.com/user-attachments/assets/419640a2-d95c-4e4b-b865-2ef427353b89" />
 
-<img width="300" height="1280" alt="ID8-ID10" src="https://github.com/user-attachments/assets/d4c992fd-4fab-48bb-9194-ee43c887ec29" />
+<img width="250" height="1280" alt="ID8-ID10" src="https://github.com/user-attachments/assets/d4c992fd-4fab-48bb-9194-ee43c887ec29" />
 
-<img width="300" height="1280" alt="Lname search" src="https://github.com/user-attachments/assets/de97e6f2-34ef-499e-9c10-09b9401a9797" />
+<img width="250" height="1280" alt="Lname search" src="https://github.com/user-attachments/assets/de97e6f2-34ef-499e-9c10-09b9401a9797" />
 
-<img width="300" height="1280" alt="Email search" src="https://github.com/user-attachments/assets/284b6ccc-7cae-4400-9c99-81bbc906fc42" />
+<img width="250" height="1280" alt="Email search" src="https://github.com/user-attachments/assets/284b6ccc-7cae-4400-9c99-81bbc906fc42" />
 
-<img width="300" height="1280" alt="Email search(2)" src="https://github.com/user-attachments/assets/f5188463-3077-472a-a69a-fbfb118be824" />
+<img width="250" height="1280" alt="Email search(2)" src="https://github.com/user-attachments/assets/f5188463-3077-472a-a69a-fbfb118be824" />
 
 ---
 
