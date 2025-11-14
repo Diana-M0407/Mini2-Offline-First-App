@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="12dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
 
-    <!-- Name -->
     <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/userId"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:text="User Name" />
-
-    <!-- Email -->
-    <TextView
-        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="email@example.com" />
+        android:layout_height="wrap_content"/>
 
-    <!-- Phone -->
     <TextView
-        android:id="@+id/tvPhone"
+        android:id="@+id/userName"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="+1 (555) 555-5555" />
+        android:layout_height="wrap_content"/>
 
-    <!-- ID -->
     <TextView
-        android:id="@+id/tvId"
+        android:id="@+id/userUsername"
+        android:textSize="14sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="ID: 1" />
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/userWebsite"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

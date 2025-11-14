@@ -12,20 +12,12 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     fun submitList(newItems: List<UserEntity>) {
         items.clear()
-        items.addAll(newItems)
+        items.addAll(newItems.sortedBy { it.id })
         notifyDataSetChanged()
     }
 
     inner class UserViewHolder(val binding: ItemUserBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-
-        fun bind(item: UserEntity) {
-            binding.tvName.text = item.name
-            binding.tvEmail.text = item.email
-            binding.tvPhone.text = item.phone
-            binding.tvId.text = item.id.toString()
-        }
-    }
+        RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
         val binding = ItemUserBinding.inflate(
@@ -39,6 +31,13 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
     override fun getItemCount() = items.size
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
-        holder.bind(items[position])
+        val user = items[position]
+
+        holder.binding.userId.text = "ID: ${user.id}"
+        holder.binding.userName.text = "Name: ${user.name}"
+        holder.binding.userUsername.text = "Username: ${user.username}"
+        holder.binding.userEmail.text = "Email: ${user.email}"
+        holder.binding.userPhone.text = "Phone: ${user.phone}"
+        holder.binding.userWebsite.text = "Website: ${user.website}"
     }
 }

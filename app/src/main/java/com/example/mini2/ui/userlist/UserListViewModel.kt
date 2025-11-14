@@ -32,7 +32,8 @@ class UserListViewModel(
     init {
         viewModelScope.launch {
             usersFlow.collect { list ->
-                _uiState.update { it.copy(users = list, isLoading = false) }
+                val sorted = list.sortedBy { it.id }
+                _uiState.update { it.copy(users = sorted, isLoading = false) }
             }
         }
 

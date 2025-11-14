@@ -7,7 +7,9 @@ fun ApiUser.toEntity(): UserEntity {
     return UserEntity(
         id = id,
         name = name,
+        username = username,
         email = email,
-        phone = phone
+        phone = phone,
+        website = website
     )
 }
