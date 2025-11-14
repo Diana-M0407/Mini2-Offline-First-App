@@ -45,7 +45,7 @@ On launch it fetches fresh API data with Retrofit and replaces Room cache using 
 
 ##### Screenshots
 
-<img width="720" height="1280" alt="ID1-ID3" src="https://github.com/user-attachments/assets/61bb5a56-d987-49ed-abad-a4ddd981f803" />
+<img width="350" height="1280" alt="ID1-ID3" src="https://github.com/user-attachments/assets/61bb5a56-d987-49ed-abad-a4ddd981f803" />
 
 <img width="720" height="1280" alt="ID4-ID6" src="https://github.com/user-attachments/assets/419640a2-d95c-4e4b-b865-2ef427353b89" />
 
